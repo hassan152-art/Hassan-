@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif+JP&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0.5;
+
+    /* height: 150%;
+    width: 10%; */
+}
+.deveinfo{
+    color: #fff;
+}
+
+
+
+.sidebar {
+    background-color: gray;
+    /* background-color: red; */
+    width: 234px;
+    font-family:'Fira Sans',sans-serif;
+    height: 100vh;
+}
+.sidebar nav{
+    padding: 45px;
+}
+.sidebar nav li{    
+    list-style: none;
+    font-size: 20px;
+    padding: 33px 0;
+
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.container{
+    display: flex;
+}
+.infocontainer{
+
+    /* background-color: aqua; */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+.deveinfo{
+    justify-content:center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'source code pro', monospace;
+
+}
+.hello{
+    font-size: 50px;
+}
+.name{
+    font-size: 40px;
+    font-weight: bold;
+    font-family:'popins',sans-serif;
+
+}
+.about{
+    font-size: 30px;
+}
+.aboutmore{
+    font-size: 20px;
+    font-family:'Fira Sans',sans-serif;
+    margin-top: 15px;
+}
+.button{
+    margin: 24px;
+}
+
+.button button{
+    color: #fff;
+    background-color: rgb(236, 228, 228);
+    font-size: 21px;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 9px 14px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.button button:hover{
+    color: #0099ff;
+    background-color: rgb(240, 165, 5);
+}
+.button a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.devepic img{
+    height: 58vh;
+    width: 110%;
+
+
+}
+
+
+/* @media (max-width: 168px) {
+    
+.devepic img{
+    width: 600px;
+    display: flex;
+    flex-direction: column-reverse !important;
+
+    
+}
+
+    } */

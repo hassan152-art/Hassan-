@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Footer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>/* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        
+        /* Footer Styles */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 20px 20px;
+            margin-top: 50px;
+        }
+        
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 20px;
+        }
+        
+        .footer-column {
+            flex: 1 1 250px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #ffcc00;
+        }
+        
+        .footer-text {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-link {
+            text-decoration: none;
+            color: #ccc;
+            font-size: 14px;
+            transition: color 0.3s, padding-left 0.3s;
+        }
+        
+        .footer-link:hover {
+            color: #ffcc00;
+            padding-left: 5px;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .social-icon {
+            color: #ccc;
+            font-size: 18px;
+            transition: color 0.3s, transform 0.3s;
+        }
+        
+        .social-icon:hover {
+            color: #ffcc00;
+            transform: translateY(-3px);
+        }
+        
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .newsletter-form input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            flex: 1;
+        }
+        
+        .newsletter-form button {
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .newsletter-form button:hover {
+            background-color: #e6b800;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #444;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ccc;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        
+            .footer-column {
+                flex: 1 1 100%;
+            }
+        
+            .newsletter-form {
+                flex-direction: column;
+            }
+        
+            .newsletter-form button {
+                width: 100%;
+            }
+        }</style>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer Column 1: About -->
+            <div class="footer-column">
+                <h3 class="footer-title">About Us</h3>
+                <p class="footer-text">We are a creative team dedicated to building amazing websites and digital experiences.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Footer Column 2: Quick Links -->
+            <div class="footer-column">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Home</a></li>
+                    <li><a href="#" class="footer-link">About</a></li>
+                    <li><a href="#" class="footer-link">Services</a></li>
+                    <li><a href="#" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Column 3: Newsletter -->
+            <div class="footer-column">
+                <h3 class="footer-title">Newsletter</h3>
+                <p class="footer-text">Subscribe to our newsletter to get the latest updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2023 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
